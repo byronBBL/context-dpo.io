@@ -184,7 +184,7 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
         Context-DPO: Aligning LLMs for Context-Faithfulness
       </h2>
       <p style="font-size: 1rem; line-height: 1.8; text-align: left;">
-        We argue that modern large language models (LLMs) require alignment specifically to enhance <strong>context-faithfulness</strong>.
+        We argue that modern LLMs require alignment specifically to enhance <strong>context-faithfulness</strong>.
         To address this, we propose <strong>Context-DPO</strong>, a novel alignment method that constructs reasoning chains based on single-hop or multi-hop knowledge to generate the <strong>faithful responses</strong> and <strong>stubborn responses</strong>.
         Context-DPO leverages these responses to form preference pairs that guide the model toward context-faithful behavior through Direct Preference Optimization (DPO).
       </p>
@@ -194,18 +194,15 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
     <figure class="image is-3by2" style="margin: 2rem auto; text-align: center;">
       <img src="static/images/framework.png" alt="Context-DPO Framework" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
     </figure>
-  </div>
-
-  <div class="container is-max-desktop">
     
     <!-- 文本部分 -->
     <div class="content" style="max-width: 1000px; margin: 0 auto;">
       <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
-        Our <strong>Context-DPO</strong> effectively aligns large language models (LLMs) to improve <strong>context-faithfulness</strong> without compromising their generative capabilities. It consistently outperforms all existing baselines without requiring any external prompt modifications. Specifically, the aligned models achieved substantial improvements compared to their original versions: <strong>35%</strong> for <em>Llama2-7B-chat</em>, <strong>78%</strong> for <em>Llama3-8B</em>, <strong>151%</strong> for <em>Mistral-7B</em>, and <strong>280%</strong> for <em>Qwen2-7B</em>.
+        🔥 Our <strong>Context-DPO</strong> effectively aligns LLMs to improve <strong>context-faithfulness</strong> without compromising their generative capabilities. It consistently outperforms all existing baselines without requiring any external prompt modifications. Specifically, the aligned models achieved substantial improvements compared to their original versions: <strong>35% for <em>Llama2-7B-chat</em></strong>, <strong>78% for <em>Llama3-8B</em></strong>, <strong>151% for <em>Mistral-7B</em></strong>, and <strong>280% for <em>Qwen2-7B</em></strong> 🚀.
       </p>
       <p style="font-size: 1.1rem; margin-top: 1.5rem; text-align: left;">
-        We have open-sourced the aligned <strong>Context-Faithful LLMs</strong> on Hugging Face for public access:
-        <a href="https://huggingface.co/collections/Bibaolong/context-faithful-llms-676b783a6f93172ba99751cf" target="_blank" style="color: #007acc; font-weight: bold;">Hugging Face Collection</a>.
+        We have open-sourced the aligned
+        <a href="https://huggingface.co/collections/Bibaolong/context-faithful-llms-676b783a6f93172ba99751cf" target="_blank" style="color: #007acc; font-weight: bold;">Context-Faithful LLMs</a> by our Context-DPO.
       </p>
     </div>
 
