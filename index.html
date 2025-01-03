@@ -158,12 +158,12 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
   <div class="container" style="max-width: 900px; margin: 0 auto;">
     <div class="content">
       <h2 class="title is-3" style="color: #2c5282;"><span class="big-emoji">&#x1F4DA;</span> <a href="https://github.com/byronBBL/Context-DPO/tree/master?tab=readme-ov-file#confiqa-format" target="_blank">ConFiQA: A New Benchmark of Context-Faithfulness</a></h2>
-      <p style="font-size: 1rem; line-height: 1.6;">
+      <p style="font-size: 1.1rem; line-height: 1.6;">
         We introduce the <strong>ConFiQA</strong> benchmark to evaluate the <strong>context-faithfulness</strong> of LLMs in real-world </strong>Retrieval-Augmented Generation (RAG)</strong> scenarios involving </strong>knowledge conflicts</strong>. 
         ConFiQA challenges LLMs to navigate conflicting knowledge and prioritize context accuracy, driving advancements in RAG-based AI systems.
         ConFiQA consists of three datasets that reflect varying complexities and reasoning levels:
       </p>
-      <ul style="margin-top: 1.5rem; font-size: 1rem;">
+      <ul style="margin-top: 1.5rem; font-size: 1.1rem;">
         <li><strong>QA (Question-Answering):</strong> Single-hop tasks with context containing one counterfactual.</li>
         <li><strong>MR (Multi-hop Reasoning):</strong> Multi-hop tasks involving one counterfactual across multiple reasoning steps.</li>
         <li><strong>MC (Multi-Conflicts):</strong> Multi-hop tasks with context containing multiple counterfactuals, reflecting more complex conflicts.</li>
@@ -183,24 +183,24 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
       <h2 class="title is-3" style="color: #2b2d42; text-align: center;">
         Context-DPO: Aligning LLMs for Context-Faithfulness
       </h2>
-      <p style="font-size: 1rem; line-height: 1.8; text-align: left;">
+      <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
         We argue that modern LLMs require alignment specifically to enhance <strong>context-faithfulness</strong>.
         To address this, we propose <strong>Context-DPO</strong>, a novel alignment method that constructs reasoning chains based on single-hop or multi-hop knowledge to generate the <strong>faithful responses</strong> and <strong>stubborn responses</strong>.
         Context-DPO leverages these responses to form preference pairs that guide the model toward context-faithful behavior through Direct Preference Optimization (DPO).
       </p>
     </div>
 
-    <!-- 图片部分 -->
-    <figure class="image is-3by2" style="margin: 2rem auto; text-align: center;">
+     <!-- 图片部分 -->
+    <figure class="image is-3by2" style="margin: 1.1rem auto 0.5rem auto; text-align: center;">
       <img src="static/images/framework.png" alt="Context-DPO Framework" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
     </figure>
     
     <!-- 文本部分 -->
     <div class="content" style="max-width: 1000px; margin: 0 auto;">
-      <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
+      <p style="font-size: 1.1.1rem; line-height: 1.8; text-align: left;">
         🔥 Our <strong>Context-DPO</strong> effectively aligns LLMs to improve <strong>context-faithfulness</strong> without compromising their generative capabilities. It consistently outperforms all existing baselines without requiring any external prompt modifications. Specifically, the aligned models achieved substantial improvements compared to their original versions: <strong>35% for <em>Llama2-7B-chat</em></strong>, <strong>78% for <em>Llama3-8B</em></strong>, <strong>151% for <em>Mistral-7B</em></strong>, and <strong>280% for <em>Qwen2-7B</em></strong> 🚀.
       </p>
-      <p style="font-size: 1.1rem; margin-top: 1.5rem; text-align: left;">
+      <p style="font-size: 1.1.1rem; margin-top: 1.1rem; text-align: left;">
         We have open-sourced the aligned
         <a href="https://huggingface.co/collections/Bibaolong/context-faithful-llms-676b783a6f93172ba99751cf" target="_blank" style="color: #007acc; font-weight: bold;">Context-Faithful LLMs</a> by our Context-DPO.
       </p>
@@ -208,7 +208,7 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
 
     <!-- 表格部分 -->
     <div class="content" style="max-width: 1000px; margin: 2rem auto;">
-      <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; font-size: 1rem;">
+      <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; font-size: 1.1rem;">
         <thead>
           <tr style="background-color: #e8f4fb; text-align: left;">
             <th style="padding: 10px; border: 1px solid #ddd;">Model Name</th>
