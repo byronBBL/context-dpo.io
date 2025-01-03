@@ -199,6 +199,37 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
   </div>
 </section>
 
+<section class="section" style="background-color: #f3f8fd; padding: 3rem 2rem;">
+  <div class="container is-max-desktop" style="text-align: center;">
+    
+    <!-- 图片部分 -->
+    <figure class="image is-3by2" style="margin-bottom: 2rem;">
+      <img src="static/images/framework.png" alt="Context-DPO Framework" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
+    </figure>
+
+    <!-- 文本部分 -->
+    <div class="content" style="max-width: 800px; margin: 0 auto;">
+      <h2 class="title is-3" style="color: #2b2d42;">
+        <i class="fas fa-network-wired" style="margin-right: 10px; color: #3a86ff;"></i>
+        Context-DPO: Aligning LLMs for Context-Faithfulness
+      </h2>
+      <p style="font-size: 1.1rem; line-height: 1.8;">
+        We argue that modern large language models (LLMs) require alignment specifically to enhance <strong>context-faithfulness</strong>.
+        To address this, we propose <strong>Context-DPO</strong>, a novel alignment method that constructs reasoning chains based on single-hop or multi-hop knowledge to generate two types of responses:
+      </p>
+      <ul style="margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.7; text-align: left;">
+        <li><strong>Faithful responses:</strong> Grounded in counterfactual context, ensuring alignment with external information.</li>
+        <li><strong>Stubborn responses:</strong> Based on factual reality, reflecting the model’s internal parametric knowledge.</li>
+      </ul>
+      <p style="font-size: 1.1rem; margin-top: 1.5rem;">
+        Context-DPO leverages these responses to form preference pairs that guide the model toward context-faithful behavior through Direct Preference Optimization (DPO).
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  
 
  <section class="section">
     <div class="container is-max-desktop">
