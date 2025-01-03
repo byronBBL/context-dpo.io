@@ -49,9 +49,9 @@
               Context-DPO: Aligning Language Models for Context-Faithfulness
             </h1>
             <div class="is-size-5">
-              <span class="author-block"> <a href="https://byronbbl.github.io/" target="_blank">Baolong Bi</a><sup>1</sup> </span>,
-              <span class="author-block"> <a href="https://www.microsoft.com/en-us/research/people/shaohanh/" target="_blank">Shaohan Huang<sup>2</sup> </span>,
-              <span class="author-block"> <a href="https://wangywust.github.io/" target="_blank">Yiwei Wang</a><sup>3</sup> </span>,
+              <span class="author-block"> <a href="https://byronbbl.github.io/" target="_blank">Baolong Bi</a><sup>1</sup>, </span>
+              <span class="author-block"> <a href="https://www.microsoft.com/en-us/research/people/shaohanh/" target="_blank">Shaohan Huang<sup>2</sup>, </span>
+              <span class="author-block"> <a href="https://wangywust.github.io/" target="_blank">Yiwei Wang</a><sup>3</sup>, </span>
               <span class="author-block">Tianchi Yang<sup>2</sup>, Zihan Zhang<sup>2</sup>, Haizhen Huang<sup>2</sup>, Lingrui </span>  <span class="author-block">  Mei<sup>1</sup>, Junfeng Fang<sup>4</sup>, Zehao Li<sup>1</sup>, Furu Wei<sup>2</sup>, Weiwei Deng<sup>2</sup>,
 Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
               <span class="author-block"> <a href="https://shenghua-liu.github.io/" target="_blank">Shenghua Liu</a><sup>1*</sup>
@@ -137,8 +137,13 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Reliable responses from large language models (LLMs) require adherence to user instructions and retrieved information. While alignment techniques enhance LLMs with human intentions, improving <b>context-faithfulness</b> remains under-explored. We propose <b>Context-DPO</b>, the first method designed to enhance LLMs' context-faithfulness through <b>Direct Preference Optimization (DPO)</b>. Our approach leverages <b>ConFiQA</b>, a benchmark simulating Retrieval-Augmented Generation (RAG) scenarios with knowledge conflicts. 
-              Context-DPO achieves <b>35% to 280% improvements</b> in faithfulness across popular open-source models. The alignment process preserves LLMs' generative capabilities while significantly enhancing their ability to utilize contextual knowledge.
+              Reliable responses from large language models (LLMs) require adherence to user instructions and retrieved information. 
+              While alignment techniques help LLMs align with human intentions and values, improving context-faithfulness through alignment remains underexplored.
+              To address this, we propose \textbf{Context-DPO}, the first alignment method specifically designed to enhance LLMs' context-faithfulness.
+              We introduce \textbf{ConFiQA}, a benchmark that simulates Retrieval-Augmented Generation (RAG) scenarios with knowledge conflicts to evaluate context-faithfulness.
+              By leveraging faithful and stubborn responses to questions with provided context from ConFiQA, our Context-DPO aligns LLMs through direct preference optimization.
+              Extensive experiments demonstrate that our Context-DPO significantly improves context-faithfulness, achieving 35\% to 280\% improvements on popular open-source models. 
+              Further analysis demonstrates that Context-DPO preserves LLMs' generative capabilities while providing interpretable insights into context utilization.
             </p>
           </div>
         </div>
