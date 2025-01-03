@@ -155,27 +155,26 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
   </div>
 </section>
 
-<section class="section" style="background-color: #eef4fa; padding: 3rem 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+<section class="section" style="padding: 2.5rem 2rem;">
   <div class="container is-max-desktop">
-    <div class="content has-text-centered">
-      <h2 class="title is-2" style="color: #2c5282;">🧠 ConFiQA: Benchmarking Context-Faithfulness in RAG</h2>
-      <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a;">
-        <strong>ConFiQA</strong> is our latest benchmark designed to rigorously test the <strong>context-faithfulness</strong> of LLMs in real-world Retrieval-Augmented Generation (RAG) scenarios involving <strong>knowledge conflicts</strong>.  
+    <div class="content">
+      <h2 class="title is-3" style="color: #2c5282;">ConFiQA: Benchmarking Context-Faithfulness in RAG</h2>
+      <p style="font-size: 1rem; line-height: 1.6;">
+        We introduce the <strong>ConFiQA</strong> benchmark to evaluate the <strong>context-faithfulness</strong> of LLMs in real-world Retrieval-Augmented Generation (RAG) scenarios involving knowledge conflicts. 
+        ConFiQA consists of three datasets that reflect varying complexities and reasoning levels:
       </p>
-      <div style="margin: 2rem auto;">
-        <p style="font-size: 1.1rem; color: #333;">✨ ConFiQA is composed of three carefully curated datasets:</p>
-        <ul style="list-style: none; padding: 0; font-size: 1rem; color: #4a4a4a;">
-          <li>🚀 <strong>QA (Question-Answering):</strong> Single-hop tasks with one counterfactual in the context.</li>
-          <li>🔗 <strong>MR (Multi-hop Reasoning):</strong> Multi-hop tasks incorporating one counterfactual.</li>
-          <li>🔥 <strong>MC (Multi-Conflicts):</strong> Advanced multi-hop tasks entangling multiple counterfactuals.</li>
-        </ul>
-      </div>
-      <p style="margin-top: 1.5rem; font-style: italic; color: #555;">
-        ConFiQA challenges LLMs to navigate conflicting knowledge and prioritize context accuracy, driving advancements in RAG-based AI systems.
+      <ul style="margin-top: 1.5rem; font-size: 1rem;">
+        <li><strong>QA (Question-Answering):</strong> Single-hop tasks with context containing one counterfactual.</li>
+        <li><strong>MR (Multi-hop Reasoning):</strong> Multi-hop tasks involving one counterfactual across multiple reasoning steps.</li>
+        <li><strong>MC (Multi-Conflicts):</strong> Multi-hop tasks with context containing multiple counterfactuals, reflecting more complex conflict scenarios.</li>
+      </ul>
+      <p style="margin-top: 1.5rem;">
+        For dataset format details, visit the <a href="https://github.com/byronBBL/Context-DPO/tree/master?tab=readme-ov-file#confiqa-format" target="_blank">ConFiQA format section</a>.
       </p>
     </div>
   </div>
 </section>
+
 
 
  <section class="section">
