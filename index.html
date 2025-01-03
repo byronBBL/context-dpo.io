@@ -181,12 +181,11 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
     <!-- 标题部分 -->
     <div class="content" style="max-width: 1000px; margin: 0 auto;">
       <h2 class="title is-3" style="color: #2b2d42; text-align: center;">
-        <i class="fas fa-network-wired" style="margin-right: 10px; color: #f47174;"></i>
         Context-DPO: Aligning LLMs for Context-Faithfulness
       </h2>
       <p style="font-size: 1rem; line-height: 1.8; text-align: left;">
         We argue that modern large language models (LLMs) require alignment specifically to enhance <strong>context-faithfulness</strong>.
-        To address this, we propose <strong>Context-DPO</strong>, a novel alignment method that constructs reasoning chains based on single-hop or multi-hop knowledge to generate the faithful responses and stubborn responses.
+        To address this, we propose <strong>Context-DPO</strong>, a novel alignment method that constructs reasoning chains based on single-hop or multi-hop knowledge to generate the  <strong>faithful responses<strong> and  <strong>stubborn responses<strong>.
         Context-DPO leverages these responses to form preference pairs that guide the model toward context-faithful behavior through Direct Preference Optimization (DPO).
       </p>
     </div>
@@ -200,6 +199,87 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
   </div>
 </section>
 
+<section class="section" style="background-color: #f5fafd; padding: 3rem 2rem;">
+  <div class="container is-max-desktop">
+    
+    <!-- 标题部分 -->
+    <div class="content" style="max-width: 1000px; margin: 0 auto;">
+      <h2 class="title is-3" style="color: #2b2d42; text-align: center;">
+        <i class="fas fa-chart-line" style="margin-right: 10px; color: #4a90e2;"></i>
+        Context-DPO: Superior Context-Faithfulness without Compromise
+      </h2>
+    </div>
+
+    <!-- 文本部分 -->
+    <div class="content" style="max-width: 1000px; margin: 0 auto;">
+      <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
+        Our <strong>Context-DPO</strong> effectively aligns large language models (LLMs) to improve <strong>context-faithfulness</strong> without compromising their generative capabilities. It consistently outperforms all existing baselines without requiring any external prompt modifications.
+        Specifically, the aligned models achieved substantial improvements compared to their original versions:
+      </p>
+      <ul style="margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.7; text-align: left;">
+        <li><strong>35\%</strong> for <em>Llama2-7B-chat</em></li>
+        <li><strong>78\% </strong>for <em>Llama3-8B</em></li>
+        <li><strong>151\%</strong> for <em>Mistral-7B</em></li>
+        <li><strong>280\%</strong> for <em>Qwen2-7B</em></li>
+      </ul>
+      <p style="font-size: 1.1rem; margin-top: 1.5rem; text-align: left;">
+        We have open-sourced the aligned <strong>Context-Faithful LLMs</strong> on Hugging Face for public access:
+        <a href="https://huggingface.co/collections/Bibaolong/context-faithful-llms-676b783a6f93172ba99751cf" target="_blank" style="color: #007acc; font-weight: bold;">Hugging Face Collection</a>.
+      </p>
+    </div>
+
+    <!-- 表格部分 -->
+    <div class="content" style="max-width: 1000px; margin: 2rem auto;">
+      <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; font-size: 1rem;">
+        <thead>
+          <tr style="background-color: #e8f4fb; text-align: left;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Model Name</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">HF Checkpoint</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">License</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Context-Faithful-LLaMA-2-7b-chat-hf</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              🤗 <a href="https://huggingface.co/Bibaolong/Context-Faithful-LLaMA-2-7b-chat-hf" target="_blank" style="color: #007acc;">Bibaolong/Context-Faithful-LLaMA-2-7b-chat-hf</a>
+            </td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank" style="color: #007acc;">Llama2-Chat</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Context-Faithful-LLaMA-3-8b-instruct</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              🤗 <a href="https://huggingface.co/Bibaolong/Context-Faithful-LLaMA-3-8b-instruct" target="_blank" style="color: #007acc;">Bibaolong/Context-Faithful-LLaMA-3-8b-instruct</a>
+            </td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              <a href="https://ai.meta.com/resources/models-and-libraries/llama-downloads/" target="_blank" style="color: #007acc;">Llama3-Instruct</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Context-Faithful-Mistral-7B-instruct</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              🤗 <a href="https://huggingface.co/Bibaolong/Context-Faithful-Mistral-7B-instruct-v0.2" target="_blank" style="color: #007acc;">Bibaolong/Context-Faithful-Mistral-7B-instruct-v0.2</a>
+            </td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              <a href="https://mistral.ai/contact/" target="_blank" style="color: #007acc;">Mistral-Instruct</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Context-Faithful-Qwen2-7B-Instruct</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              🤗 <a href="https://huggingface.co/Bibaolong/Context-Faithful-Qwen2-7B-Instruct" target="_blank" style="color: #007acc;">Bibaolong/Context-Faithful-Qwen2-7B-Instruct</a>
+            </td>
+            <td style="padding: 10px; border: 1px solid #ddd;">
+              <a href="https://github.com/QwenLM/Qwen/blob/main/LICENSE" target="_blank" style="color: #007acc;">Qwen-Instruct</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
 
   
