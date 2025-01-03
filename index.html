@@ -202,7 +202,7 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
   </div>
 </section>
 
-<section class="section" style="padding: 3rem 2rem; background-color: #fdeef4;">
+<section class="section" style="padding: 3rem 2rem;">
   <div class="container is-max-desktop">
     
     <!-- 标题部分 -->
@@ -287,6 +287,44 @@ Feng Sun<sup>2</sup>, Qi Zhang<sup>2</sup>,  </span>
     </div>
   </div>
 </section>
+
+  <section class="section" style="background-color: #f9f5fc; padding: 3rem 2rem;">
+  <div class="container is-max-desktop">
+    
+    <!-- 标题部分 -->
+    <div class="content" style="max-width: 1000px; margin: 0 auto;">
+      <h2 class="title is-3" style="color: #4a235a; text-align: center;">
+        In-depth Exploration of Context-Faithfulness
+      </h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
+        Our analysis showcases the transformative impact of <strong>Context-DPO</strong> on enhancing LLMs' <strong>context-faithfulness</strong>. The alignment reduces irrelevant and stubborn responses, leading to a significant rise in context-faithful answers. Through token-level analysis, we observe that aligned models effectively prioritize context-relevant tokens, boosting their probability distributions and improving overall response fidelity.
+      </p>
+    </div>
+
+    <!-- 图表部分 -->
+    <figure class="image" style="margin: 2rem auto; text-align: center;">
+      <img src="static/images/log_compare.png" alt="Logits Comparison" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
+      <figcaption style="font-size: 0.9rem; color: #4a235a; margin-top: 0.5rem;">Figure 1: Average logits of context-faithful tokens, highlighting improvements with Context-DPO.</figcaption>
+    </figure>
+    <figure class="image" style="margin: 2rem auto; text-align: center;">
+      <img src="static/images/logits.png" alt="Kernel Density Estimation" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
+      <figcaption style="font-size: 0.9rem; color: #4a235a; margin-top: 0.5rem;">Figure 2: Softmax probability distribution for context-faithful tokens.</figcaption>
+    </figure>
+    <figure class="image" style="margin: 2rem auto; text-align: center;">
+      <img src="static/images/rank2.png" alt="Ranking Distribution" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 100%; height: auto;">
+      <figcaption style="font-size: 0.9rem; color: #4a235a; margin-top: 0.5rem;">Figure 3: Frequency of top-ranked context-faithful tokens in aligned models.</figcaption>
+    </figure>
+
+    <!-- 结尾部分 -->
+    <div class="content" style="max-width: 1000px; margin: 2rem auto;">
+      <p style="font-size: 1.1rem; line-height: 1.8; text-align: left;">
+        These findings illustrate the internal mechanisms of <strong>Context-DPO</strong>, demonstrating its ability to significantly improve context-faithfulness alignment in LLMs. The results highlight how this alignment boosts the generation frequency of top-ranked context-faithful tokens, enhancing overall response quality without reliance on external methods.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 
 <!--BibTex citation -->
